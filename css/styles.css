@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+/* Utility Classes */
+.title {
+    font-size: 4.3rem;
+    padding: 0.5rem;
+}
+
+.color-primary {
+    color: #ff1e56;
+}
+
+.btn-primary {
+    width: 30%;
+    margin-top: 1rem;
+    padding: 0.9rem;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #eeeeee;
+}
+
+.btn-primary:hover {
+    cursor: pointer;
+    color: #ff1e56;
+    transition: all 0.5s;
+}
+
+#navbar {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    color: #eeeeee;
+    position: sticky;
+    top: 0;
+}
+
+#navbar .navbar-container {
+    width: 100%;
+    max-width: 1028px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar .navbar-container .logo {
+    font-family: "Pacifico", cursive;
+    font-size: 2.5rem;
+    color: #ff1e56;
+    align-self: center;
+}
+
+#navbar .navbar-container .logo:hover {
+    cursor: pointer;
+    color: #eeeeee;
+    transition: all 0.5s;
+}
+
+#navbar .navbar-container ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar .navbar-container ul li {
+    padding: 1.4rem 0.9rem;
+    margin: 0 0.5rem;
+}
+
+#navbar .navbar-container ul li a:hover {
+    cursor: pointer;
+    color: #ff1e56;
+    transition: all 0.5s;
+}
+
+/* SHOWCASE */
+#showcase {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5) url("../img/showcase.jpg") no-repeat center
+        center/cover;
+    background-blend-mode: color;
+}
+
+#showcase .showcase-container {
+    height: 100%;
+    width: 1028px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #eeeeee;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+/* ABOUT */
+#about .about-container {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 10rem;
+    align-items: center;
+}
+
+#about .about-container .about-content {
+    flex-direction: column;
+    margin-left: 5rem;
+}
+
+#about .about-container .about-content .about-lead {
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    color: #ff1e56;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+}
+
+.item i {
+    padding: 1rem;
+    color: #ff1e56;
+}
+
+/* IMAGES */
+#iphone-x {
+    height: 480px;
+    width: auto;
+}
