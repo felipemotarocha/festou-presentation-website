@@ -1,5 +1,5 @@
 // Smooth Scrolling
-$("#navbar a, .btn-primary").on("click", function(event) {
+$("#navbar a, .btn-primary").on("click", function (event) {
     if (this.hash !== "") {
         event.preventDefault();
 
@@ -7,7 +7,7 @@ $("#navbar a, .btn-primary").on("click", function(event) {
 
         $("html, body").animate(
             {
-                scrollTop: $(hash).offset().top - 50
+                scrollTop: $(hash).offset().top
             },
             800
         );

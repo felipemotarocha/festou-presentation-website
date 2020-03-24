@@ -13,10 +13,21 @@ a {
     color: #eeeeee;
 }
 
+p {
+    letter-spacing: 0.2px;
+}
+
 /* Utility Classes */
 .title {
     font-size: 4.3rem;
     padding: 0.5rem;
+}
+
+.lead {
+    font-family: "Pacifico", cursive;
+    color: #ff1e56;
+    font-size: 4rem;
+    text-align: center;
 }
 
 .color-primary {
@@ -40,6 +51,22 @@ a {
     transition: all 0.5s;
 }
 
+.avatar {
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.feature {
+    height: auto;
+    width: 25vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* NAVBAR */
+
 #navbar {
     height: 10vh;
     display: flex;
@@ -51,16 +78,16 @@ a {
     top: 0;
 }
 
-#navbar .navbar-container {
+#navbar .navbar-container { 
     width: 100%;
-    max-width: 1028px;
+    max-width: 80vw;
     display: flex;
     justify-content: space-between;
 }
 
 #navbar .navbar-container .logo {
     font-family: "Pacifico", cursive;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #ff1e56;
     align-self: center;
 }
@@ -99,7 +126,7 @@ a {
 
 #showcase .showcase-container {
     height: 100%;
-    width: 1028px;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,7 +139,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
+    width: 100vw;
 }
 
 /* ABOUT */
@@ -151,4 +179,61 @@ a {
 #iphone-x {
     height: 480px;
     width: auto;
+}
+
+/* TESTIMONIALS */
+#testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    /* background: red; */
+}
+
+ #testimonials .testimonials-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+
+#testimonials .testimonials-container .testimonials-content {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 1.2rem;
+    border-bottom: 1px solid lightgray;
+    font-size: 1.1rem;
+}
+
+/* FEATURES */
+#features {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.features-container {
+    display: flex;
+    justify-content: center;    
+}
+
+.features-content {
+    text-align: justify;
+    max-width: 25vw;
+    font-size: 1.2rem;
+    background: #000000;
+    border-radius: 10px;
+    color: white;
+    height: 120%;
+}
+
+.features-content p {
+    padding: 1rem;
+}
+
+.features-container .features-content:nth-child(2) {
+    /* border-right: 1px solid lightgray;  
+    border-left: 1px solid lightgray;   */
+    margin: 0 2rem;
 }
