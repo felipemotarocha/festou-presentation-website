@@ -2,122 +2,129 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet" />
-
-    <title>Festou - Encontre ou faça uma festa agora mesmo!</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Festou Mobile First</title>
 </head>
 
 <body>
     <nav id="navbar">
         <div class="navbar-container">
-            <h1 class="logo">Festou!</h1>
+            <h1 class="logo color-primary">Festou!</h1>
             <ul>
                 <li><a href="#showcase">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#testimonials">Why</a></li>
-                <li><a href="#features">Features</a></li>
-                <!-- <li><a href="#contact">Contact</a></li> -->
+                <li><a href="#gallery">Gallery</a></li>
             </ul>
         </div>
     </nav>
-
-    <section id="showcase">
+    <header id="showcase">
         <div class="showcase-container">
-            <h2 class="title">
-                Have <span class="color-primary">fun</span>. Find a
-                <span class="color-primary">party</span>.
+            <h2 class="lead">Have <span class="color-primary">fun</span>. Find a <span
+                    class="color-primary">party</span>.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, expedita?</p>
+            <a class="btn-primary" href="#about">MEET US</a>
+        </div>
+    </header>
+    <main>
+
+        <section id="about">
+            <div id="about-title">
+                <h2 class="title color-primary" data-aos="zoom-in" data-aos-duration="700">About Us
+                </h2>
+                <h4 class="subtitle color-primary" data-aos="zoom-in" data-aos-duration="700">Who We Are and What We Do.
+                </h4>
+
+            </div>
+            <div class="about-container" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">
+                <img class="iphone-x" src="./img/iphone-x.png" alt="iPhone X demonstration">
+                <div class="items">
+                    <div class="item">
+                        <i class="fas fa-map-marked fa-2x color-primary"></i>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Quia?
+                        </p>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-users fa-2x color-primary"></i>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing.
+                        </p>
+                    </div>
+
+                    <div class="item">
+                        <i class="fas fa-glass-cheers fa-2x color-primary"></i>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+
+                    <div class="item">
+                        <i class="fas fa-glass-cheers fa-2x color-primary"></i>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-container" data-aos="fade-left" data-aos-delay="400" data-aos-duration="500">
+
+                <div class="testimonials-content">
+                    <img src="./img//person-1.jpg" alt="" class="avatar">
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere et nisi corporis laborum tempore
+                        ad
+                        esse temporibus deleniti illum dolorem!"</p>
+                </div>
+                <div class="testimonials-content">
+                    <img src="./img//person-2.jpg" alt="" class="avatar">
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ratione mollitia debitis
+                        minima
+                        ullam quas molestias sapiente odit quibusdam explicabo!"</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2 class="title color-primary" data-aos="fade-right" data-aos-delay="300" data-aos-duration="700">Gallery
             </h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Dignissimos vitae sed molestiae totam ipsum corporis dicta
-                odio consectetur. Ducimus, natus.
-            </p>
-            <a class="btn-primary" href="#about">Meet us</a>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="about-container">
-            <img id="iphone-x" src="./img/iphone-x.png" alt="" />
-            <div class="about-content">
-                <div class="about-lead">
-                    <h2>About Us</h2>
+            <h4 class="color-primary subtitle" data-aos="fade-right" data-aos-delay="300" data-aos-duration="700">
+                Moments we
+                provided to our Users.</h4>
+            <div class="gallery-container">
+                <div class="gallery-content" data-aos="zoom-in" data-aos-delay="800" data-aos-duration="700">
+                    <img src="https://source.unsplash.com/1600x900/?party" alt="" class="gallery">
                 </div>
-                <div class="item">
-                    <i class="fas fa-map-marked fa-3x"></i>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Quia?
-                    </p>
+                <div class="gallery-content" data-aos="zoom-in" data-aos-delay="1100" data-aos-duration="700">
+                    <img src="https://source.unsplash.com/1600x900/?events" alt="" class="gallery">
                 </div>
-                <div class="item">
-                    <i class="fas fa-users fa-3x"></i>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing.
-                    </p>
+                <div class="gallery-content" data-aos="zoom-in" data-aos-delay="1400" data-aos-duration="700">
+                    <img src="https://source.unsplash.com/1600x900/?friends" alt="" class="gallery">
                 </div>
-
-                <div class="item">
-                    <i class="fas fa-glass-cheers fa-3x"></i>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit.
-                    </p>
+                <div class="gallery-content" data-aos="zoom-in" data-aos-delay="1700" data-aos-duration="700">
+                    <img src="https://source.unsplash.com/1600x900/?smile" alt="" class="gallery">
                 </div>
-                <div class="item">
-                    <i class="fas fa-money-bill-wave fa-3x"></i>
-                    <p>
-                        Lorem ipsum dolor sit amet.
-                    </p>
+                <div class="gallery-content" data-aos="zoom-in" data-aos-delay="2000" data-aos-duration="700">
+                    <img src="https://source.unsplash.com/1600x900/?happy" alt="" class="gallery">
+                </div>
+                <div class="gallery-content" data-aos="zoom-in" data-aos-delay="2300" data-aos-duration="700">
+                    <img src="https://source.unsplash.com/1600x900/?dance" alt="" class="gallery">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
 
-    <section id="testimonials">
-        <h2 class="lead">Why the people love us</h2>
-        <div class="testimonials-container">
-
-            <div class="testimonials-content">
-                <img src="./img//person-1.jpg" alt="" class="avatar">
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere et nisi corporis laborum tempore ad
-                    esse temporibus deleniti illum dolorem!"</p>
-            </div>
-            <div class="testimonials-content">
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ratione mollitia debitis minima
-                    ullam quas molestias sapiente odit quibusdam explicabo!"</p>
-                <img src="./img//person-2.jpg" alt="" class="avatar">
-            </div>
-        </div>
-    </section>
-
-    <section id="features">
-        <h2 class="lead">Our Exclusive Features</h2>
-        <div class="features-container">
-            <div class="features-content">
-                <img src="./img/features-1.jpg" alt="" class="feature">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis similique sint optio eligendi
-                    ipsam enim quis minus animi officia rem.</p>
-            </div>
-            <div class="features-content">
-                <img src="./img/features-2.jpeg" alt="" class="feature">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat sint vero! Nihil doloribus
-                    eaque iste quas qui, dolor mollitia, laboriosam nisi provident sequi, modi accusantium quos itaque
-                    tempora reiciendis!</p>
-            </div>
-            <div class="features-content">
-                <img src="./img/features-3.jpeg" alt="" class="feature">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis similique sint optio eligendi
-                    ipsam enim quis minus animi officia rem.</p>
-            </div>
-        </div>
-    </section>
+    <footer>
+        <P>Copyright © 2020</P>
+        <p>Designed by Felipe Rocha</p>
+    </footer>
 
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -126,7 +133,14 @@
     <!-- Local JS File -->
     <script src="js/main.js"></script>
 
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

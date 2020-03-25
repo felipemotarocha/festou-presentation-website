@@ -4,38 +4,23 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
     text-decoration: none;
-    color: #eeeeee;
+    color: white;
 }
 
-p {
-    letter-spacing: 0.2px;
+main {
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0,0,0,0.1), -30px 0px 40px rgba(0,0,0,0.1);
 }
 
-/* Utility Classes */
-.title {
-    font-size: 4.3rem;
-    padding: 0.5rem;
-}
-
-.lead {
-    font-family: "Pacifico", cursive;
-    color: #ff1e56;
-    font-size: 4rem;
-    text-align: center;
-}
-
-.color-primary {
-    color: #ff1e56;
-}
-
+/* Utility */
 .btn-primary {
-    width: 30%;
+    display: inline-block;
+    width: 50%;
     margin-top: 1rem;
     padding: 0.9rem;
     border-radius: 5px;
@@ -45,195 +30,262 @@ p {
     color: #eeeeee;
 }
 
-.btn-primary:hover {
-    cursor: pointer;
+.logo {
+    font-size: 2rem;
+    font-family: "Pacifico", cursive;
+    margin-top: -0.7rem;
+}
+
+.lead {
+    font-size: 3rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-family: "Pacifico", cursive;
+}
+
+.subtitle {
+    font-family: "Pacifico", cursive;
+    font-size: 1rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+.color-primary {
     color: #ff1e56;
-    transition: all 0.5s;
+}
+
+.iphone-x {
+    height: 50vh;
+    width: auto;
 }
 
 .avatar {
     height: 200px;
-    width: auto;
+    display: inline-block;
     border-radius: 50%;
-    margin-right: 2rem;
 }
 
-.feature {
-    height: auto;
-    width: 25vw;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-/* NAVBAR */
-
+/* Navbar */
 #navbar {
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #000000;
-    color: #eeeeee;
+    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
     position: sticky;
     top: 0;
-}
+    z-index: 1;
+}   
 
-#navbar .navbar-container { 
-    width: 100%;
-    max-width: 80vw;
-    display: flex;
-    justify-content: space-between;
-}
-
-#navbar .navbar-container .logo {
-    font-family: "Pacifico", cursive;
-    font-size: 2.2rem;
-    color: #ff1e56;
-    align-self: center;
-}
-
-#navbar .navbar-container .logo:hover {
-    cursor: pointer;
-    color: #eeeeee;
-    transition: all 0.5s;
+#navbar .navbar-container {
+    padding: 1rem;
 }
 
 #navbar .navbar-container ul {
     display: flex;
+    justify-content: center;
     list-style: none;
+    margin-top: -0.8rem;
 }
 
 #navbar .navbar-container ul li {
-    padding: 1.4rem 0.9rem;
-    margin: 0 0.5rem;
+    padding: 1rem;
 }
 
-#navbar .navbar-container ul li a:hover {
-    cursor: pointer;
-    color: #ff1e56;
-    transition: all 0.5s;
-}
-
-/* SHOWCASE */
+/* Showcase */
 #showcase {
-    display: flex;
-    justify-content: center;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5) url("../img/showcase.jpg") no-repeat center
-        center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5) url('../img/showcase.jpg') no-repeat center center/cover;
     background-blend-mode: color;
+    color: white; 
+    text-align: center;
 }
 
 #showcase .showcase-container {
-    height: 100%;
-    width: 80vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #eeeeee;
+    width: 80%;
 }
 
+/* About */
 #about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-}
-
-/* ABOUT */
-#about .about-container {
-    display: flex;
-    justify-content: center;
-    padding: 3rem 10rem;
-    align-items: center;
-}
-
-#about .about-container .about-content {
-    flex-direction: column;
-    margin-left: 5rem;
-}
-
-#about .about-container .about-content .about-lead {
-    font-size: 2rem;
-    margin-top: 2rem;
-    text-align: center;
-    font-family: "Pacifico", cursive;
-    color: #ff1e56;
-}
-
-.item {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid lightgrey;
-}
-
-.item i {
-    padding: 1rem;
-    color: #ff1e56;
-}
-
-/* IMAGES */
-#iphone-x {
-    height: 480px;
-    width: auto;
-}
-
-/* TESTIMONIALS */
-#testimonials {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    /* background: red; */
-}
-
- #testimonials .testimonials-container {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-}
-
-
-#testimonials .testimonials-container .testimonials-content {
-    display: flex;
-    align-items: center;
-    width: 50%;
     padding: 1.2rem;
-    border-bottom: 1px solid lightgray;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.items .item {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
     font-size: 1.1rem;
 }
 
-/* FEATURES */
-#features {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.features-container {
-    display: flex;
-    justify-content: center;    
+/* Testimonials */
+.testimonials-container {
+    padding: 2rem;
+    font-size: 1.1rem;
 }
 
-.features-content {
-    text-align: justify;
-    max-width: 25vw;
-    font-size: 1.2rem;
-    background: #000000;
-    border-radius: 10px;
-    color: white;
-    height: 120%;
+.testimonials-container .testimonials-content {
+   padding: 1rem;
 }
 
-.features-content p {
+/* gallery */
+#gallery {
+    max-width: 80vw;
+    margin: auto;
+    text-align: center;
+}
+
+.gallery-content {
     padding: 1rem;
 }
 
-.features-container .features-content:nth-child(2) {
-    /* border-right: 1px solid lightgray;  
-    border-left: 1px solid lightgray;   */
-    margin: 0 2rem;
+.gallery {
+    display: inline-block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    background: #000000;
+    color: #ccc;
+}
+
+/* 500px */
+@media(min-width: 500px) {
+    .btn-primary {
+        width: 30%;
+    }
+
+    .subtitle {
+        font-family: "Pacifico", cursive;
+        font-size: 1.5rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .iphone-x {
+        height: 60vh;
+    }
+
+    .avatar {
+        height: 25vh;
+    }
+    
+    /* Navbar */
+    #navbar {
+        display: flex;
+        align-items: center;
+        height: 80px;
+    }
+    #navbar .navbar-container {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80vw;
+    }
+    
+    .navbar-container ul {
+        margin-bottom: -0.8rem;
+    }
+
+    /* About */
+    #about {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2rem 1fr;
+        grid-column-gap: 3rem;
+        max-width: 80vw;
+        margin: auto;
+        height: 100vh;
+    }
+
+    #about-title {
+        width: 100%;
+        grid-row: 1;
+        grid-column: 1 / span 2;
+    }
+
+    .about-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .items .item {
+        display: flex;
+        padding: 1.5rem;
+        margin-left: 20px;
+        text-align: left;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .items .item p {
+        margin-left: 10px;
+    }
+
+    .testimonials-container {
+        grid-row: 2;
+        margin: auto;
+    }
+
+    .testimonials-content {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        text-align: left;
+    }
+
+    .testimonials-content:nth-child(2) {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+
+    .testimonials-content p {
+        margin: 0 1rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    #gallery {
+        margin: auto;
+        height: 100vh;
+    }
+
+    .gallery-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+    .gallery-content {
+        padding: 1rem;
+    }
+
+    .gallery {
+        width: 30vw;
+    }
 }

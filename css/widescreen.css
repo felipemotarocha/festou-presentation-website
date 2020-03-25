@@ -1,0 +1,17 @@
+.btn {
+    width: 30%;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+#navbar .navbar-container {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+}
